@@ -1,0 +1,108 @@
+{
+  "path":[[65, 221], [81, 355], [92, 522], [86, 591], [89, 690], [110, 763], [172, 830], [267, 852], [380, 844], [434, 784], [429, 703], [417, 592], [409, 504], [400, 421], [439, 335], [545, 268], [618, 218], [710, 228], [837, 266], [863, 341], [894, 444], [916, 529], [929, 597], [923, 678], [914, 751], [891, 818], [848, 872], [776, 884], [709, 867], [666, 822], [639, 759], [626, 651], [638, 548], [642, 479], [644, 415], [665, 371]],
+  "pathimg":"assets/background.png",
+  "levels": [
+    {
+      "remark":"First (but least)",
+      "reward":100,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":10,
+          "seq": [
+            {"what":"normal","level":0},
+            {"what":"wait","time":80}
+          ]
+        }
+      ]
+    },
+    {
+      "remark":"Blue goes to red.",
+      "reward":150,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":5,
+          "seq":[
+            {"what":"normal","level":0},
+            {"what":"wait","time":80},
+            {"what":"normal","level":1},
+            {"what":"wait","time":80}
+          ]
+        }
+      ]
+    },
+    {
+      "remark":"Green to blue to red!",
+      "reward":200,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":10,
+          "seq":[
+            {"what":"normal","level":2},
+            {"what":"wait","time":100}
+          ]
+        }
+      ]
+    },
+    {
+      "remark":"Tanks with high HP are black",
+      "reward":250,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":20,
+          "seq":[
+            {"what":"normal","level":3},
+            {"what":"wait","time":140},
+            {"what":"normal","level":4},
+            {"what":"wait","time":140}
+          ]
+        }
+      ]
+    },
+    {
+      "remark": "Massive wave incoming!",
+      "reward": 300,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":5,
+          "seq":[
+            {"what":"tank","hp":10},
+            {"what":"wait","time":200}
+          ]
+        }
+      ]
+    },
+    {
+      "remark":"Beefy enemies next",
+      "reward": 450,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":50,
+          "seq":[
+            {"what":"normal","level":2},
+            {"what":"wait","time":80}
+          ]
+        }
+      ]
+    },
+    {
+      "remark":"Final level incoming!",
+      "reward":500,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":20,
+          "seq":[
+            {"what":"tank","hp":20},
+            {"what":"wait","time":40}
+          ]
+        }
+      ]
+    }
+  ]
+}
