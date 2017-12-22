@@ -103,6 +103,28 @@
           ]
         }
       ]
+    },
+    {
+      "remark":null,
+      "reward":null,
+      "waves":[
+        {
+          "what":"repeat",
+          "times":100,
+          "seq":[
+            {"what":"tank","hp":25},
+            {"what":"wait","time":60},
+            {
+              "what":"repeat",
+              "times":10,
+              "seq":[
+                {"what":"normal","level":5},
+                {"what":"wait","time":40}
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
